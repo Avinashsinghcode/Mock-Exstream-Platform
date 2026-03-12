@@ -16,6 +16,8 @@ export default defineConfig(({ mode }) => {
       },
     },
     server: {
+      // Add this line below to fix the Blocked Request error
+      allowedHosts: ['mock-exstream-platform.onrender.com'],
       watch: {
         ignored: ['**/database/**'],
       },
